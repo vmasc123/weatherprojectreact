@@ -123,7 +123,7 @@ export default function App() {
 
       <footer>
         <small>
-          <a href="https://github.com/vmasc123/Weather-Project" target="_blank">
+          <a href="https://github.com/vmasc123/weatherprojectreact" target="_blank">
             Open-source code{" "}
           </a>
           by Victoria Mascarenhas
