@@ -129,7 +129,7 @@ export default function App() {
           by Victoria Mascarenhas
         </small>
       </footer>
-    </div>
+      </div>
   );
 }
 
