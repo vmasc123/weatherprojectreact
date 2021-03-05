@@ -1,9 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
+import axios from "axios";
 import "./App.css";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 
 export default function App() {
+  const [ready, setReady] = useState (false);
+  const [temperature, setTemperature] = useState(null);
+  function handleResponse(response) {
+    setTemperature(response.data.main.temp);
+    setReady(true);
+  }
+  if (ready) {
   return (
     <div className="App">
       <div className="container">
@@ -20,7 +28,7 @@ export default function App() {
               id="icon"
               src="https://openweathermap.org/img/wn/01d@2x.png"
             />
-            <span id="temperature"> 0 </span>
+            <span id="temperature"> {Math.round(temperature)} </span>
             <span className="units" />
             <a href="#" id="celsius-link">
               °C
@@ -131,5 +139,14 @@ export default function App() {
       </footer>
       </div>
   );
+} else {
+  const apiKey = "374252187c262a7fb1ad4bdc00cf1626";
+  let city = "New York";
+  let apiUrl = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;  
+  axios.get(apiUrl).then(handleResponse);
+
+  return "Loading"
 }
+} 
+
 
