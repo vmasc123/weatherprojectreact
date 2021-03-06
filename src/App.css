@@ -3,6 +3,8 @@ body {
   }
   
   small {
+    position: fixed; 
+    right: 725px; 
     font-size: 13px;
   }
   
@@ -30,11 +32,11 @@ body {
     max-width: 900px;
   }
   
-  .temperature {
+  .temperature, .weatherTemperature {
     position: relative;
     font-size: 40px;
     float: left;
-    left: 140px;
+    left: 150px;
     top: 37px;
     margin: 15px;
   }
@@ -50,22 +52,25 @@ body {
     margin: 15px;
     width: 30%;
     top: 47px;
-    right: 30px;
+    right: 75px;
     float: right;
   }
   
   .row {
     position: fixed;
-    text-align: left;
+    text-align: center;
     right: 540px;
     font-size: large;
   }
   
   .search {
+    position: fixed;
+    right: 750px;
     text-align: center;
     margin: 0;
   }
   .enterCity {
+    position: relative;
     border-radius: 10px;
     padding: 1px 30px;
     text-align: center;
