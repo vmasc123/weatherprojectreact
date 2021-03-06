@@ -1,14 +1,14 @@
 import React, { useState } from "react";
-import FormattedDate from "./FormattedDate";
 import axios from "axios";
+import FormattedDate from "./FormattedDate";
 import "./Weather.css";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState ({ready: false});
+ 
   function handleResponse(response) {
-    console.log(response.data);
     setWeatherData ({
       temperature: response.data.main.temp,
       description: response.data.weather[0].description,
@@ -19,46 +19,46 @@ export default function Weather(props) {
       date: new Date(response.data.dt * 1000),
       ready: true
     });
-  }
+}
+  
+
   if (weatherData.ready) {
   return (
-    <div className="Weather"> 
-    <body>
-        <h1 id="change-city">
-          <strong>{weatherData.city}</strong>
-        </h1>
-        <h2>
-        <FormattedDate date={weatherData.date}/>
-        </h2>
-        <div>
-          <div className="temperature">
-            <img
-              className="icon"
-              id="icon"
-              src={weatherData.iconUrl}
-            />
-            <span id="temperature"> {Math.round(weatherData.temperature)} </span>
-            <span className="units" />
-            <a href="#" id="celsius-link">
-              °C
-            </a>{" "}
-            |
-            <a href="#" id="fahrenheit-link">
-              °F
-            </a>
-          </div>
-        </div>
-      <div className="weather">
-        <div>
-          Weather: <span id="description" className="text-capitalize"> {weatherData.description}</span>
-        </div>
-        <div>
-          Wind: <span id="wind"> {Math.round(weatherData.wind * 8/5)}km/h </span>
-        </div>
-        <div>
-          Humidity: <span id="humidity">{Math.round(weatherData.humidity)}%</span>
-        </div>
-      </div>
+      <div className="Weather">
+       <h1>
+    <strong>{weatherData.city}</strong>
+  </h1>
+  <h2>
+  <FormattedDate date={weatherData.date}/>
+  </h2>
+  <div>
+    <div className="temperature">
+      <img
+        className="icon"
+        id="icon"
+        src={weatherData.iconUrl}
+      />
+      <span id="temperature"> {Math.round(weatherData.temperature)} </span>
+      <span className="units" />
+      <a href="#" id="celsius-link">
+        °C
+      </a>{" "}
+      |
+      <a href="#" id="fahrenheit-link">
+        °F
+      </a>
+    </div>
+  </div>
+<div className="weather">
+  <div>
+    Weather: <span id="description" className="text-capitalize"> {weatherData.description}</span>
+  </div>
+  <div>
+    Wind: <span id="wind"> {Math.round(weatherData.wind * 8/5)}km/h </span>
+  </div>
+  <div>
+    Humidity: <span id="humidity">{Math.round(weatherData.humidity)}%</span>
+  </div>
       <br />
       <br />
       <br />
@@ -120,7 +120,7 @@ export default function Weather(props) {
           type="text"
           autofocus="on"
           placeholder="Enter a city here"
-          className="border"
+          className="border"  
         />
         <br />
         <br />
@@ -136,14 +136,22 @@ export default function Weather(props) {
           Current Location
         </button>
       </form>
-      </body> 
+      <footer>
+        <small>
+          <a href="https://github.com/vmasc123/weatherprojectreact" target="_blank">
+            Open-source code{" "}
+          </a>
+          by Victoria Mascarenhas
+        </small>
+      </footer> 
       </div>
-);
+      </div>
+  );
 } else {
-  const apiKey = "374252187c262a7fb1ad4bdc00cf1626";
+  const apiKey = "4235c1e76fa14f9f8542da028429e01a";
   let apiUrl = `http://api.openweathermap.org/data/2.5/weather?q=${props.defaultCity}&appid=${apiKey}&units=metric`;  
   axios.get(apiUrl).then(handleResponse);
 
   return "Loading"
 }
-} 
+}
