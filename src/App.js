@@ -7,14 +7,6 @@ return (
   <div className="App">
       <div className="container">
       <Weather defaultCity="Toronto"/>
-      <footer>
-        <small>
-          <a href="https://github.com/vmasc123/weatherprojectreact" target="_blank">
-            Open-source code{" "}
-          </a>
-          by Victoria Mascarenhas
-        </small>
-      </footer>
       </div>
       </div>
 );
