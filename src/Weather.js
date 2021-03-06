@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import FormattedDate from "./FormattedDate";
+import WeatherTemperature from "./WeatherTemperature";
 import "./App.css";
 
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -49,32 +50,23 @@ function handleCityChange(event) {
   <FormattedDate date={weatherData.date}/>
   </h2>
   <div>
-    <div className="temperature">
-      <img
-        className="icon"
-        id="icon"
-        src={weatherData.iconUrl}
-      />
-      <span id="temperature"> {Math.round(weatherData.temperature)} </span>
-      <span className="units" />
-      <a href="#" id="celsius-link">
-        °C
-      </a>{" "}
-      |
-      <a href="#" id="fahrenheit-link">
-        °F
-      </a>
-    </div>
+  <div className="temperature">
+             <img
+              className="icon"
+              id="icon"
+              src={weatherData.iconUrl}
+              />
+     <WeatherTemperature celsius={weatherData.temperature}/> 
   </div>
 <div className="weather">
   <div>
-    Weather: <span id="description" className="text-capitalize"> {weatherData.description}</span>
+   <strong>Weather:</strong> <span id="description" className="text-capitalize"> {weatherData.description}</span>
   </div>
   <div>
-    Wind: <span id="wind"> {Math.round(weatherData.wind * 8/5)}km/h </span>
+   <strong>Wind:</strong> <span id="wind"> {Math.round(weatherData.wind * 8/5)}km/h </span>
   </div>
   <div>
-    Humidity: <span id="humidity">{Math.round(weatherData.humidity)}%</span>
+   <strong>Humidity:</strong> <span id="humidity">{Math.round(weatherData.humidity)}%</span>
   </div>
       <br />
       <br />
@@ -84,7 +76,7 @@ function handleCityChange(event) {
         <div className="col">
           <strong>12:00</strong>
           <br />
-          <img src="https://openweathermap.org/img/wn/02d@2x.png" />
+          <img src="https://openweathermap.org/img/wn/03d@2x.png" />
           <br />3 °C /<em> -4°C</em>
         </div>
 
@@ -123,6 +115,12 @@ function handleCityChange(event) {
       <br />
       <br />
       <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
       <form className="search" onSubmit={handleSubmit}>
         <input
           className="enterCity"
@@ -147,6 +145,13 @@ function handleCityChange(event) {
           Current Location
         </button>
       </form>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
       <footer>
         <small>
           <a href="https://github.com/vmasc123/weatherprojectreact" target="_blank">
@@ -155,6 +160,7 @@ function handleCityChange(event) {
           by Victoria Mascarenhas
         </small>
       </footer> 
+      </div>
       </div>
       </div>
   );
