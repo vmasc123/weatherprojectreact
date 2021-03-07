@@ -12,8 +12,11 @@ export default function Weather(props) {
   const [city, setCity] = useState(props.defaultCity);
 
   function handleResponse(response) {
+    console.log(response.data);
     setWeatherData ({
       temperature: response.data.main.temp,
+      minTemp: response.data.main.temp_min,
+      maxTemp: response.data.main.temp_max,
       description: response.data.weather[0].description,
       wind: response.data.wind.speed,
       humidity: response.data.main.humidity,
@@ -55,8 +58,8 @@ function handleCityChange(event) {
               className="icon"
               id="icon"
               src={weatherData.iconUrl}
-              />
-     <WeatherTemperature celsius={weatherData.temperature}/> 
+              /> 
+          <WeatherTemperature celsius={weatherData.temperature}/> 
   </div>
 <div className="weather">
   <div>
@@ -76,40 +79,40 @@ function handleCityChange(event) {
         <div className="col">
           <strong>12:00</strong>
           <br />
-          <img src="https://openweathermap.org/img/wn/03d@2x.png" />
-          <br />3 °C /<em> -4°C</em>
+          <img src= {weatherData.iconUrl} />
+          <br />{Math.round(weatherData.minTemp)}°C/<em> {Math.round(weatherData.maxTemp)}°C </em>
         </div>
 
         <div className="col">
           <strong>15:00</strong>
           <br />
-          <img src="https://openweathermap.org/img/wn/03d@2x.png" />
+          <img src= {weatherData.iconUrl} />
           <br />
-          -3°C /<em> -6°C</em>
+          {Math.round(weatherData.minTemp)}°C /<em> {Math.round(weatherData.maxTemp)}°C</em>
         </div>
 
         <div className="col">
           <strong>18:00</strong>
           <br />
-          <img src="https://openweathermap.org/img/wn/04d@2x.png" />
+          <img src= {weatherData.iconUrl} />
           <br />
-          -2°C /<em> -6°C</em>
+          {Math.round(weatherData.minTemp)}°C /<em> {Math.round(weatherData.maxTemp)}°C</em>
         </div>
 
         <div className="col">
           <strong>21:00</strong>
           <br />
-          <img src="https://openweathermap.org/img/wn/09d@2x.png" />
+          <img src= {weatherData.iconUrl} />
           <br />
-          -3°C /<em> -6°C</em>
+          {Math.round(weatherData.minTemp)}°C /<em> {Math.round(weatherData.maxTemp)}°C</em>
         </div>
 
         <div className="col">
           <strong>24:00</strong>
           <br />
-          <img src="https://openweathermap.org/img/wn/11d@2x.png" />
+          <img src= {weatherData.iconUrl} />
           <br />
-          0°C /<em> -1°C</em>
+          {Math.round(weatherData.minTemp)}°C /<em> {Math.round(weatherData.maxTemp)}°C</em>
         </div>
       </div>
       <br />
