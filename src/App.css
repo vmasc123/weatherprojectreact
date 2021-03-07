@@ -22,10 +22,21 @@ body {
     text-align: center;
     font-size: 15px;
   }
-   
+
+  .row {
+    position: fixed;
+    text-align: center;
+    right: 619px; 
+  }
+
+  .time {
+  font-size: large;
+  text-align: center;
+  }
+
   .icon {
     position: fixed;
-    left: 535px;
+    left: 570px;
     top: 170px;
     font-size: 30px;
   }
@@ -39,7 +50,7 @@ body {
     position: relative;
     font-size: 35px;
     float: left;
-    left: 150px;
+    left: 170px;
     top: 19px;
     margin: 15px;
   }
@@ -55,23 +66,17 @@ body {
     margin: 15px;
     width: 30%;
     top: 47px;
-    right: 75px;
+    right: 120px;
     float: right;
   }
-  
-  .row {
-    position: fixed;
-    text-align: center;
-    right: 540px;
-    font-size: large;
-  }
-  
+
   .search {
     position: fixed;
     right: 750px;
     text-align: center;
     margin: 0;
   }
+
   .enterCity {
     position: relative;
     border-radius: 10px;
