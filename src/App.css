@@ -36,7 +36,7 @@ body {
 
   .icon {
     position: fixed;
-    left: 570px;
+    left: 600px;
     top: 170px;
     font-size: 30px;
   }
@@ -50,7 +50,7 @@ body {
     position: relative;
     font-size: 35px;
     float: left;
-    left: 170px;
+    left: 180px;
     top: 19px;
     margin: 15px;
   }
