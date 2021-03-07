@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import FormattedDate from "./FormattedDate";
 import WeatherTemperature from "./WeatherTemperature";
+import Forecast from "./Forecast";
 import "./App.css";
 
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -15,8 +16,6 @@ export default function Weather(props) {
     console.log(response.data);
     setWeatherData ({
       temperature: response.data.main.temp,
-      minTemp: response.data.main.temp_min,
-      maxTemp: response.data.main.temp_max,
       description: response.data.weather[0].description,
       wind: response.data.wind.speed,
       humidity: response.data.main.humidity,
@@ -36,8 +35,7 @@ function search() {
 function handleSubmit(event) {
   event.preventDefault();
   search();
-}
-  
+}  
 
 function handleCityChange(event) {
   setCity(event.target.value);
@@ -71,50 +69,11 @@ function handleCityChange(event) {
   <div>
    <strong>Humidity:</strong> <span id="humidity">{Math.round(weatherData.humidity)}%</span>
   </div>
+    <br />
+    <br />
+    <br />
+      <Forecast city={weatherData.city}/>
       <br />
-      <br />
-      <br />
-      <br />
-      <div className="row" id="forecast">
-        <div className="col">
-          <strong>12:00</strong>
-          <br />
-          <img src= {weatherData.iconUrl} />
-          <br />{Math.round(weatherData.minTemp)}°C/<em> {Math.round(weatherData.maxTemp)}°C </em>
-        </div>
-
-        <div className="col">
-          <strong>15:00</strong>
-          <br />
-          <img src= {weatherData.iconUrl} />
-          <br />
-          {Math.round(weatherData.minTemp)}°C /<em> {Math.round(weatherData.maxTemp)}°C</em>
-        </div>
-
-        <div className="col">
-          <strong>18:00</strong>
-          <br />
-          <img src= {weatherData.iconUrl} />
-          <br />
-          {Math.round(weatherData.minTemp)}°C /<em> {Math.round(weatherData.maxTemp)}°C</em>
-        </div>
-
-        <div className="col">
-          <strong>21:00</strong>
-          <br />
-          <img src= {weatherData.iconUrl} />
-          <br />
-          {Math.round(weatherData.minTemp)}°C /<em> {Math.round(weatherData.maxTemp)}°C</em>
-        </div>
-
-        <div className="col">
-          <strong>24:00</strong>
-          <br />
-          <img src= {weatherData.iconUrl} />
-          <br />
-          {Math.round(weatherData.minTemp)}°C /<em> {Math.round(weatherData.maxTemp)}°C</em>
-        </div>
-      </div>
       <br />
       <br />
       <br />
@@ -148,6 +107,7 @@ function handleCityChange(event) {
           Current Location
         </button>
       </form>
+      <br />
       <br />
       <br />
       <br />
