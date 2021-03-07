@@ -24,6 +24,9 @@ body {
   }
    
   .icon {
+    position: fixed;
+    left: 535px;
+    top: 170px;
     font-size: 30px;
   }
   
@@ -34,10 +37,10 @@ body {
   
   .temperature, .weatherTemperature {
     position: relative;
-    font-size: 40px;
+    font-size: 35px;
     float: left;
     left: 150px;
-    top: 37px;
+    top: 19px;
     margin: 15px;
   }
   
