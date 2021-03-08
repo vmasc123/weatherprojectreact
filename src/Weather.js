@@ -1,11 +1,10 @@
 import React, { useState } from "react";
 import axios from "axios";
+import "bootstrap/dist/css/bootstrap.min.css";
 import FormattedDate from "./FormattedDate";
 import WeatherTemperature from "./WeatherTemperature";
 import Forecast from "./Forecast";
 import "./App.css";
-
-import "bootstrap/dist/css/bootstrap.min.css";
 
 
 export default function Weather(props) {
