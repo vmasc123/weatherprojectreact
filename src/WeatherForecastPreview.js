@@ -22,7 +22,7 @@ export default function WeatherForecastPreview(props) {
         <h3 className="time">{hours()}</h3>
         <img
           className="forecastIcons"  
-          src={`http://openweathermap.org/img/wn/${props.data.weather[0].icon}@2x.png`}
+          src={`https://openweathermap.org/img/wn/${props.data.weather[0].icon}@2x.png`}
           alt={[props.data.main.temp]}
         />
         <p className="forecastTemperature"> {temperature()} </p>
@@ -34,7 +34,7 @@ export default function WeatherForecastPreview(props) {
         <h3 className="time">{hours()}</h3>
         <img
           className="forecastIcons"   
-          src={`http://openweathermap.org/img/wn/${props.data.weather[0].icon}@2x.png`}
+          src={`https://openweathermap.org/img/wn/${props.data.weather[0].icon}@2x.png`}
           alt={[props.data.main.temp]}
         />
       </div>
