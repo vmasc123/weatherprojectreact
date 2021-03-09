@@ -40,7 +40,7 @@ small a {
   position: relative;
   font-size: 35px;
   float: left;
-  left: 150px;
+  left: 170px;
   top: 19px;
   margin: 15px;
 }
@@ -63,7 +63,7 @@ small a {
   text-align: center;
   position: fixed;
   top: 330px;
-  right: 451px; 
+  right: 520px; 
 }
 
 .search {
