@@ -14,7 +14,7 @@ h2 {
 
 small {
   position: fixed; 
-  right: 600px; 
+  right: 560px; 
   font-size: 13px;
   top: 700px;
 }
@@ -63,7 +63,7 @@ small a {
   text-align: center;
   position: fixed;
   top: 330px;
-  right: 405px; 
+  right: 403px; 
 }
 
 .search {
