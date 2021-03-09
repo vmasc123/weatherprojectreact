@@ -4,7 +4,7 @@ body {
   
   small {
     position: fixed; 
-    right: 630px; 
+    right: 720px; 
     font-size: 13px;
   }
   
@@ -26,7 +26,7 @@ body {
   .row {
     position: fixed;
     text-align: center;
-    right: 525px; 
+    right: 620px; 
   }
 
   .time {
@@ -36,7 +36,7 @@ body {
 
   .icon {
     position: fixed;
-    left: 537px;
+    left: 600px;
     top: 157px;
     font-size: 30px;
   }
@@ -72,7 +72,7 @@ body {
 
   .search {
     position: fixed;
-    right: 667px;
+    right: 755px;
     text-align: center;
     margin: 0;
   }
@@ -89,7 +89,7 @@ body {
     border-radius: 10px;
     padding: 2px 20px;
     box-shadow: 1px 1px;
-    left: 730px;
+    left: 815px;
   }
   
   .currentLocation {
