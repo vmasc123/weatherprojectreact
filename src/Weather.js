@@ -90,9 +90,6 @@ function currentLocation(event) {
       <br />
       <br />
       <br />
-      <br />
-      <br />
-      <br />
       <form className="search" onSubmit={handleSubmit}>
         <input
           className="enterCity"
@@ -130,7 +127,7 @@ function currentLocation(event) {
           <a href="https://github.com/vmasc123/weatherprojectreact" target="_blank">
             Open-source code{" "}
           </a>
-          by Victoria Mascarenhas
+          by <a href="https://www.linkedin.com/in/victoriamascarenhasa674a882/" target="_blank">Victoria Mascarenhas</a>
         </small>
       </footer> 
       </div>
