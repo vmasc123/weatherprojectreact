@@ -32,7 +32,7 @@ small a {
 .icon {
   position: fixed;
   left: 530px;
-  top: 170px;
+  top: 155px;
   font-size: 30px;
 }
 
@@ -63,12 +63,12 @@ small a {
   text-align: center;
   position: fixed;
   top: 330px;
-  right: 400px; 
+  right: 395px; 
 }
 
 .search {
   position: fixed;
-  right: 670px;
+  right: 400px;
   text-align: center;
   margin: 0;
   top: 535px;
