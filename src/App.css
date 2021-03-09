@@ -14,7 +14,7 @@ h2 {
 
 small {
   position: fixed; 
-  right: 600px; 
+  right: 480px; 
   font-size: 13px;
   top: 700px;
 }
@@ -31,7 +31,7 @@ small a {
 
 .icon {
   position: fixed;
-  left: 530px;
+  left: 520px;
   top: 160px;
   font-size: 30px;
 }
@@ -40,7 +40,7 @@ small a {
   position: relative;
   font-size: 35px;
   float: left;
-  left: 150px;
+  left: 130px;
   top: 19px;
   margin: 15px;
 }
