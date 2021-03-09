@@ -16,7 +16,7 @@ small {
   position: fixed; 
   right: 585px; 
   font-size: 13px;
-  top: 700px;
+  top: 740px;
 }
 
 small a {
@@ -86,7 +86,7 @@ small a {
   border-radius: 10px;
   padding: 2px 20px;
   box-shadow: 1px 1px;
-  left: 675px;
+  left: 670px;
 }
 
 .currentLocation {
