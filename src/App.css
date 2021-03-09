@@ -12,6 +12,47 @@ h2 {
   font-size: 15px;
 }
 
-.colRow {
-  font-style: italic;
+.container {
+  padding: 20px;
+  max-width: 900px;
 }
+
+.icon {
+  position: fixed;
+  left: 530px;
+  top: 157px;
+  font-size: 30px;
+}
+
+.temperature, .weatherTemperature {
+  position: relative;
+  font-size: 35px;
+  float: left;
+  left: 130px;
+  top: 19px;
+  margin: 15px;
+}
+
+.weather {
+  position: relative;
+  margin: 15px;
+  width: 30%;
+  top: 47px;
+  right: 90px;
+  float: right;
+}
+
+
+.row {
+  text-align: center;
+  position: fixed;
+  top: 330px;
+  right: 451px; 
+}
+
+.time {
+  font-size: medium;
+  text-align: center;
+  }
+
+  

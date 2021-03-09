@@ -80,6 +80,7 @@ function currentLocation(event) {
   <div>
    <strong>Humidity:</strong> <span id="humidity">{Math.round(weatherData.humidity)}%</span>
   </div>
+  </div>
     <br />
     <br />
     <br />
@@ -132,7 +133,6 @@ function currentLocation(event) {
           by Victoria Mascarenhas
         </small>
       </footer> 
-      </div>
       </div>
       </div>
   );
