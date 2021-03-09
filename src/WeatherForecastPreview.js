@@ -18,7 +18,7 @@ export default function WeatherForecastPreview(props) {
 
   if (props.unit === "celsius") {
     return (
-      <div className="colRow">
+      <div className="col">
         <h3 className="time">{hours()}</h3>
         <img
           className="forecastIcons"  

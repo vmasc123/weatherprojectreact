@@ -1,100 +1,17 @@
 body {
-    background-image: linear-gradient(to top, #accbee 100%, #e7f0fd 100%);
-  }
-  
-  small {
-    position: fixed; 
-    right: 640px; 
-    font-size: 13px;
-  }
-  
-  small a {
-    text-decoration: none;
-    text-align: left, center;
-  }
-  
-  h1 {
-    text-align: center;
-    font-size: 50px;
-  }
-  
-  h2 {
-    text-align: center;
-    font-size: 15px;
-  }
+  background-image: linear-gradient(to top, #accbee 100%, #e7f0fd 100%);
+}
 
-  .row {
-    position: fixed;
-    text-align: center;
-    right: 535px; 
-  }
-
-  .time {
-  font-size: large;
+h1 {
   text-align: center;
-  }
+  font-size: 50px;
+}
 
-  .icon {
-    position: fixed;
-    left: 530px;
-    top: 157px;
-    font-size: 30px;
-  }
-  
-  .container {
-    padding: 20px;
-    max-width: 900px;
-  }
-  
-  .temperature, .weatherTemperature {
-    position: relative;
-    font-size: 35px;
-    float: left;
-    left: 130px;
-    top: 19px;
-    margin: 15px;
-  }
-  
-  .units a {
-    text-decoration: none;
-    font-size: 25px;
-    color: black;
-  }
-  
-  .weather {
-    position: relative;
-    margin: 15px;
-    width: 30%;
-    top: 47px;
-    right: 90px;
-    float: right;
-  }
+h2 {
+  text-align: center;
+  font-size: 15px;
+}
 
-  .search {
-    position: fixed;
-    right: 670px;
-    text-align: center;
-    margin: 0;
-  }
-
-  .entercity {
-    border-radius: 10px;
-    padding: 1px 30px;
-    text-align: center;
-  }
-  
-  .searchButton {
-    position: fixed;
-    background-color: transparent;
-    border-radius: 10px;
-    padding: 2px 20px;
-    box-shadow: 1px 1px;
-    left: 725px;
-  }
-  
-  .currentLocation {
-    background-color: transparent;
-    border-radius: 10px;
-    padding: 2px 20px;
-    box-shadow: 1px 1px;
-  }
+.colRow {
+  font-style: italic;
+}
