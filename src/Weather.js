@@ -92,8 +92,6 @@ function currentLocation(event) {
       <br />
       <br />
       <br />
-      <br />
-      <br />
       <form className="search" onSubmit={handleSubmit}>
         <input
           className="enterCity"
