@@ -68,7 +68,7 @@ small a {
 
 .search {
   position: fixed;
-  right: 618px;
+  right: 615px;
   text-align: center;
   margin: 0;
   top: 560px;
@@ -86,7 +86,7 @@ small a {
   border-radius: 10px;
   padding: 2px 20px;
   box-shadow: 1px 1px;
-  left: 670px;
+  left: 672px;
 }
 
 .currentLocation {
