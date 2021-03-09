@@ -36,7 +36,7 @@ small a {
   font-size: 30px;
 }
 
-.temperature, .weatherTemperature {
+.temperature {
   position: relative;
   font-size: 35px;
   float: left;
