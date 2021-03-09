@@ -12,6 +12,18 @@ h2 {
   font-size: 15px;
 }
 
+small {
+  position: fixed; 
+  right: 640px; 
+  font-size: 13px;
+  top: 700px;
+}
+
+small a {
+  text-decoration: none;
+  text-align: left, center;
+}
+
 .container {
   padding: 20px;
   max-width: 900px;
@@ -42,6 +54,10 @@ h2 {
   float: right;
 }
 
+.time {
+  font-size: medium;
+  text-align: center;
+  }
 
 .row {
   text-align: center;
@@ -50,9 +66,35 @@ h2 {
   right: 451px; 
 }
 
-.time {
-  font-size: medium;
+.search {
+  position: fixed;
+  right: 670px;
   text-align: center;
-  }
+  margin: 0;
+  top: 535px;
+}
+
+.entercity {
+  border-radius: 10px;
+  padding: 1px 30px;
+  text-align: center;
+}
+
+.searchButton {
+  position: fixed;
+  background-color: transparent;
+  border-radius: 10px;
+  padding: 2px 20px;
+  box-shadow: 1px 1px;
+  left: 725px;
+}
+
+.currentLocation {
+  background-color: transparent;
+  border-radius: 10px;
+  padding: 2px 20px;
+  box-shadow: 1px 1px;
+}
+
 
   
